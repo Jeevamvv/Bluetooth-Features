@@ -155,7 +155,7 @@ def check_active_dongles():
         log.info("{}: {}".format(str(temp_variable),str(i)))
         temp_variable = temp_variable + 1
 
-    dongle_choise = int(raw_input(" Choose your Dongle interface out of listed data ......"))
+    dongle_choise = int(input(" Choose your Dongle interface out of listed data ......"))
     length_of_list = len(list_of_active_dongle)
     if dongle_choise > length_of_list:
         log.info(" Invalid choise!")
